@@ -94,7 +94,9 @@ a.tomorrowland-alfter:hover {
 /* Pagina de aceito.html */
 
 .container1 {
-    padding: 227px 0px 0px 28px;
+    padding: 0px 0px 36px 870px;
+    display: flex;
+    /* padding: 227px 0px 0px 28px; */
 }
 
 img {
@@ -224,15 +226,15 @@ footer {
     }
     /* pagina do sim */
     .container1 {
-        padding: 227px 0px 0px 28px;
+        padding: 0px 0px 103px 120px;
     }
     img {
         width: 314px;
         height: 319px;
         /* padding: 0px 37px 260px 162px; */
-        isplay: flex;
+        display: flex;
         /* text-align: center; */
-        padding: 100px 10px 262px 45px;
+        padding: 29px 0px 106px 45px;
     }
     .content2 {
         display: flex;
