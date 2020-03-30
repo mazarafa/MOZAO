@@ -161,7 +161,7 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-weight: lighter;
-        letter-spacing: 6px;
+        letter-spacing: 3px;
         padding: 105px 26px 10px 20.5px;
     }
     .first-container {
@@ -188,7 +188,7 @@ footer {
     .content1 {
         display: flex;
         text-align: center;
-        padding: 100px 10px 262px 45px;
+        padding: 95px 10px 167px 18px;
     }
     .content1>a {
         text-decoration: none;
@@ -226,15 +226,15 @@ footer {
     }
     /* pagina do sim */
     .container1 {
-        padding: 0px 0px 103px 120px;
+        padding: 0px 0px 20px 100px;
     }
     img {
         width: 314px;
-        height: 319px;
+        height: 290px;
         /* padding: 0px 37px 260px 162px; */
         display: flex;
         /* text-align: center; */
-        padding: 29px 0px 106px 45px;
+        padding: 29px 0px 106px 22px;
     }
     .content2 {
         display: flex;
