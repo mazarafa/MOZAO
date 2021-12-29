@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.text-entre {
+  padding: 3%;
+  margin-top: -15%;
+}
+
+.heart_beating {
+  position: relative;
+}
+
+.heart {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: red;
+  transform: rotate(45deg);
+  animation: up 2s ease-out infinite;
+}
+
+.heart::before, .heart::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.heart::before {
+  top: -25px;
+}
+
+.heart::after {
+  left: -25px;
+}
+
+.glow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 25px;
+  bottom: 48px;
+  border-radius: 100% 0%;
+  border-left: 2px solid #FFEAA5;
+  transform: rotate(90deg);
+}
+
+.shadow-header {
+  width: 70px;
+  height: 20px;
+  background: #4A676A;
+  opacity: .2;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -50px;
+  right: -10px;
+  animation: up_shadow 2s ease-out infinite;
+}
+
+@keyframes up {
+  0%, 40%, 70%, 100% {
+    transform: scale(1) rotate(45deg);
+  }
+
+  20% {
+    transform: scale(1.4) rotate(45deg);
+  }
+
+  50%, 80% {
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+@keyframes up_shadow {
+  0%, 40%, 70%, 100% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.4);
+  }
+
+  50%, 80% {
+    transform: scale(1.2);
+  }
+}
+
+.clique-entre {
+  margin-top: 6%;
+}
+
+
+@media (max-width: 648px) {
+  .text-entre {
+    padding: 15%;
+    margin-top: -28%;
+  }
+
+  .clique-entre {
+    margin-top: 20%;
+  }
+
+  .web-pedido {
+
+    margin: 0 auto;
+    padding: 55px;
+    color: white;
+
+  }
+
+  p {
+    position: fixed;
+    color: lime;
+    font-family: "Courier";
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 45em; */
+    animation: type 4s steps(60, end);
+  }
+  .dual-buttons {
+    margin-top: 22%;
+  }
+}
+
+
+.titule-crush {
+  margin-top: -4%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: red;
+}
+
+
+
+/********************************************** PAGE DASHBOARD ***************************************/
+.web-pedido {
+  margin: 0 auto;
+  /*  width: 200px;
+  background: black; */
+  padding: 7%;
+  color: white;
+}
+
+p {
+  color: lime;
+  font-family: "Courier";
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 45em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+::selection {
+  background: black;
+}
