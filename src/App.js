@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/dating-request" component={Entra}/> {/* gambiarra linda */}
         <Route exact path="/" component={Entra}/>
         <Route exact path="/Congratulations" component={Congratulations}/>
         <Route exact path="/Dashboad" component={Dashboad}/>
