@@ -105,39 +105,16 @@
   margin-top: 6%;
 }
 
-
-@media (max-width: 648px) {
-  .text-entre {
-    padding: 15%;
-    margin-top: -28%;
-  }
-
-  .clique-entre {
-    margin-top: 20%;
-  }
-
-  .web-pedido {
-
-    margin: 0 auto;
-    padding: 55px;
-    color: white;
-
-  }
-
-  p {
-    position: fixed;
-    color: lime;
-    font-family: "Courier";
-    font-size: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    /* width: 45em; */
-    animation: type 4s steps(60, end);
-  }
-  .dual-buttons {
-    margin-top: 22%;
-  }
+/************************************* momento frase clichê  de pedido **************************************/
+.web-frase {
+  margin: 0 auto;
+  /*  width: 200px;
+  background: black; */
+  padding: 7%;
+  color: white;
 }
+
+/************************************* termina frase clichê  de pedido **************************************/
 
 
 .titule-crush {
@@ -161,16 +138,22 @@
   background-color: red;
 }
 
-
-
 /********************************************** PAGE DASHBOARD ***************************************/
-.web-pedido {
-  margin: 0 auto;
-  /*  width: 200px;
-  background: black; */
-  padding: 7%;
-  color: white;
+
+.container-d {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
 }
+
+
+.container-d p {
+  margin: 0;
+  margin-top: -2.5%;
+}
+
 
 p {
   color: lime;
@@ -180,15 +163,19 @@ p {
   overflow: hidden;
   width: 45em;
   animation: type 4s steps(60, end);
+  position: fixed;
 }
+
 
 p:nth-child(2) {
   animation: type2 8s steps(60, end);
 }
 
+
 span {
   animation: blink 1s infinite;
 }
+
 
 @keyframes type {
   from {
@@ -218,4 +205,73 @@ span {
 
 ::selection {
   background: black;
+}
+
+/********************************************** PAGE DEFAULT ***************************************/
+
+.default-navegator {
+  margin: 0 auto;
+  padding: 7%;
+  color: white;
+}
+
+.deu-ruim{
+  margin-top: 2%;
+  color: lime;
+}
+
+/************************************************** up responsive ***************************************************/
+@media (max-width: 648px) {
+  .text-entre {
+    padding: 15%;
+    margin-top: -28%;
+  }
+
+  .default-navegator {
+    margin-top: -47%;
+  }
+
+  .web-frase {
+    margin: 0 auto;
+    padding: 55px;
+    color: white;
+  }
+
+  .clique-entre {
+    margin-top: 20%;
+  }
+
+  .container-d {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 0px;
+  }
+
+  .container-d p {
+    margin-top: 5%;
+  }
+
+  p {
+    position: fixed;
+    color: lime;
+    font-family: "Courier";
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 45em; */
+    animation: type 4s steps(60, end);
+  }
+
+  .dual-buttons {
+    margin-top: 22%;
+  }
+
+  .deu-ruim {
+    left: 16%;
+    margin-top: 5%;
+    color: lime;
+  }
+
 }

@@ -27,7 +27,7 @@ function Entra() {
                         onClick={() => {
                             history.push('/Congratulations');
                         }}
-                    >ENTER</button>
+                    >ENTRE</button>
                 </div>
             </header>
 

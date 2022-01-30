@@ -7,7 +7,7 @@ function Congratulations() {
     return (
         <div className="App">
             <header className="App-header">
-                <div className="web-pedido">
+                <div className="web-frase">
                     Algumas pessoas entram nas nossas vidas de surpresa. 
                     Você entrou na minha num momento em que eu não estava esperando nada.
                     Mas depois de ter entrado, me fez pensar em como aguentei viver  tanto tempo sem você. <br/>
